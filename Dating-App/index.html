@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dating App</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a
+        ><img src="./icons/8932501.png" width="40px" alt="" />Chatt<span
+          >uzb</span
+        ></a
+      >
+      <div class="buttons">
+        <button class="btn volBtn">
+          <img class="volImg" src="./icons/vol.png" width="20px" alt="" />
+          <img
+            class="volImg dNone"
+            src="./icons/volless.png"
+            width="20px"
+            alt=""
+          />
+        </button>
+        <div class="message-box btn">
+          <img src="./icons/message.png" width="20px" alt="" />
+          <img src="./icons/down.png" class="down" width="10px" alt="" />
+          <ul class="messages">
+            <li><a href="">🧕🏼 Name n 🇺🇿</a></li>
+            <li><a href="">🧕🏼 Name n 🇺🇿</a></li>
+            <li><a href="">🧕🏼 Name n 🇺🇿</a></li>
+            <li><a href="">🧕🏼 Name n 🇺🇿</a></li>
+          </ul>
+        </div>
+        <div class="btn burger-box">
+          <img src="./icons/burger.png" width="20px" alt="" />
+          <ul class="burger-menu">
+            <li class="user-link">user</li>
+            <li><a href="">? Help</a></li>
+            <li><a href="">⇱ Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- messanger body -->
+    <section>
+      <div class="container">
+        <div class="pages">
+          <h1 class="active-sese">Chat</h1>
+          <h1 class="">Users Online</h1>
+        </div>
+        <div class="content">
+          <div class="chat">
+            <div class="dNone chat-head"></div>
+            <div class="chat-body">
+              <!-- reg -->
+              <form class="reg-form">
+                <label>
+                  <span>Name</span>
+                  <input class="name" type="text" name="" id="" />
+                </label>
+                <label>
+                  <span>Country</span>
+                  <input class="country" type="text" name="" id="" />
+                </label>
+                <label>
+                  <span>Age</span>
+                  <input class="age" type="number" name="" id="" />
+                </label>
+                <div>
+                  Gender
+                  <label>
+                    <span>Male</span>
+                    <input
+                      class="gender"
+                      type="radio"
+                      name="gender"
+                      value="male"
+                    />
+                  </label>
+                  <label>
+                    <span>Female</span>
+                    <input
+                      class="gender"
+                      type="radio"
+                      name="gender"
+                      value="female"
+                    />
+                  </label>
+                </div>
+                <button class="reg-btn" type="submit">ADD</button>
+              </form>
+            </div>
+            <form class="chat-write dNone">
+              <input
+                class="write-message"
+                type="text"
+                placeholder="Write something..."
+              />
+              <button type="reset" class="sent-left">
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/left.png"
+                  alt="left"
+                />
+                <span class="sent-span">LEFT</span>
+              </button>
+              <button type="submit" class="sent-right">
+                <span class="sent-span">RIGHT</span>
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/right--v1.png"
+                  alt="right--v1"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="online-users">
+            <h1 class="numberUsers"></h1>
+            <hr />
+            <ul class="users"></ul>
+          </div>
+        </div>
+        <div class="users-online"></div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
